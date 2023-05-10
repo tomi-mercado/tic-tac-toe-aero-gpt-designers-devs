@@ -1,0 +1,99 @@
+body {
+  font-family: "Press Start 2P";
+  background-image: url("https://as1.ftcdn.net/v2/jpg/04/89/11/42/1000_F_489114224_rNW6VL5GjJucMpXuz6XlYkhcSHPXYHa3.jpg");
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url("https://i.imgur.com/9KP93J7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid #f44336;
+  border-radius: 10px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #f44336;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 72px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.square:hover {
+  background-color: #efefef;
+}
+
+.square:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.square:nth-child(n + 7) {
+  border-top: none;
+}
+
+.square:first-child {
+  border-top-left-radius: 10px;
+}
+
+.square:nth-child(3) {
+  border-top-right-radius: 10px;
+}
+
+.square:nth-child(7) {
+  border-bottom-left-radius: 10px;
+}
+
+.square:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+#restart {
+  display: block;
+  margin: 20px auto;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#restart:hover {
+  background-color: #e53935;
+}
+
+.square.x {
+  background-image: url("https://www.pngfind.com/pngs/m/79-790884_8-bit-mario-star-old-school-mario-star.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.square.o {
+  background-image: url("https://e7.pngegg.com/pngimages/998/1018/png-clipart-super-mario-bros-super-mario-world-minecraft-8-bit-super-mario-bros-text.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Add this CSS to hide the audio element */
+#audio {
+  opacity: 0;
+}
